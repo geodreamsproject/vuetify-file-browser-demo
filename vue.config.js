@@ -4,7 +4,9 @@ module.exports = {
         resolve: {
             alias: {
                 "@": path.resolve(__dirname, 'src/'),
-                "vuetify-file-browser": process.env.NODE_ENV === "development" ? path.resolve(__dirname, '../component') : "vuetify-file-browser"
+                //"vuetify-file-browser": process.env.NODE_ENV === "development" ? path.resolve(__dirname, '../vuetify-file-browser') : "vuetify-file-browser"
+                "vuetify-file-browser": path.resolve(__dirname, '../vuetify-file-browser')
+                //"vuetify-file-browser": process.env.NODE_ENV === "development" ? "vuetify-file-browser" : "vuetify-file-browser"
             }
         },
         module: {

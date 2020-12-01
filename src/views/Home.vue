@@ -1,12 +1,13 @@
 <template>
     <div>
-        <h1 class="text-center font-weight-light my-5">Vuetify File Browser</h1>
+        <h1 class="text-center font-weight-light my-5">File Browser</h1>
         <v-row>
             <v-col>
                 <file-browser
-                    :axiosConfig="{baseURL: '__AXIOS_BASE_URL__'}"
+                    
                     :maxUploadFileSize="5242880"
                     :maxUploadFilesCount="5"
+                    :storages="'local'"
                 />
             </v-col>
         </v-row>
