@@ -8,6 +8,7 @@
                     :maxUploadFileSize="5242880"
                     :maxUploadFilesCount="5"
                     :storages="'local'"
+                    :basePath="'/'"
                     :endpoints="{
                         list: { url: '/folder{path}', method: 'get' },
                         upload: { url: '/files{path}', method: 'post' },
