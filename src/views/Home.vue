@@ -9,13 +9,6 @@
                     :maxUploadFilesCount="5"
                     :storages="'local'"
                     :basePath="'/'"
-                    :endpoints="{
-                        list: { url: '/folder{path}', method: 'get' },
-                        upload: { url: '/files{path}', method: 'post' },
-                        mkdir: { url: '/files{path}', method: 'put' },
-                        delete: { url: '/files{path}', method: 'delete' },
-                        download : { url: '/files{path}', method: 'get' },
-                    }"
                 />
             </v-col>
         </v-row>
